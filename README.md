@@ -5,11 +5,9 @@ __This library is a component-oriented, extensible client library for the OpenAI
 
 You can install the package via composer:
 
-```bash
-
 // PHP 8.0, 8.1, 8.2
+```bash
 composer require mounirrquiba/openai
-
 ```
 
 # Table of Contents

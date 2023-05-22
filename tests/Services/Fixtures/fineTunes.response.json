@@ -1,0 +1,229 @@
+{
+    "object": "list",
+    "data": [
+        {
+            "object": "fine-tune",
+            "id": "ft-kp36A6V0yCxixhdNOd1khEH1",
+            "hyperparams": {
+                "n_epochs": 4,
+                "batch_size": 1,
+                "prompt_loss_weight": 0.01,
+                "learning_rate_multiplier": 0.1
+            },
+            "organization_id": "org-bYCY6SRU0TjFN5GBGPo6sKXi",
+            "model": "curie",
+            "training_files": [
+                {
+                    "object": "file",
+                    "id": "file-DILkImh8E8Gl3PEGY1kD95BA",
+                    "purpose": "fine-tune",
+                    "filename": "FineTuningSample1.jsonl",
+                    "bytes": 9099,
+                    "created_at": 1684148376,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "validation_files": [],
+            "result_files": [],
+            "created_at": 1684186072,
+            "updated_at": 1684186226,
+            "status": "cancelled",
+            "fine_tuned_model": null
+        },
+        {
+            "object": "fine-tune",
+            "id": "ft-kXSupnLOlDZYomVs6yfhsbgg",
+            "hyperparams": {
+                "n_epochs": 4,
+                "batch_size": 1,
+                "prompt_loss_weight": 0.01,
+                "learning_rate_multiplier": 0.1
+            },
+            "organization_id": "org-bYCY6SRU0TjFN5GBGPo6sKXi",
+            "model": "curie",
+            "training_files": [
+                {
+                    "object": "file",
+                    "id": "file-DILkImh8E8Gl3PEGY1kD95BA",
+                    "purpose": "fine-tune",
+                    "filename": "FineTuningSample1.jsonl",
+                    "bytes": 9099,
+                    "created_at": 1684148376,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "validation_files": [],
+            "result_files": [
+                {
+                    "object": "file",
+                    "id": "file-v87ClcgYM59sL3E4pBVoBhYv",
+                    "purpose": "fine-tune-results",
+                    "filename": "compiled_results.csv",
+                    "bytes": 17201,
+                    "created_at": 1684186835,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "created_at": 1684186400,
+            "updated_at": 1684186836,
+            "status": "succeeded",
+            "fine_tuned_model": "curie:ft-personal-2023-05-15-21-40-34"
+        },
+        {
+            "object": "fine-tune",
+            "id": "ft-BHrH5Pz3ptN4waVELjGUx2gu",
+            "hyperparams": {
+                "n_epochs": 4,
+                "batch_size": 1,
+                "prompt_loss_weight": 0.01,
+                "learning_rate_multiplier": 0.1
+            },
+            "organization_id": "org-bYCY6SRU0TjFN5GBGPo6sKXi",
+            "model": "curie",
+            "training_files": [
+                {
+                    "object": "file",
+                    "id": "file-DILkImh8E8Gl3PEGY1kD95BA",
+                    "purpose": "fine-tune",
+                    "filename": "FineTuningSample1.jsonl",
+                    "bytes": 9099,
+                    "created_at": 1684148376,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "validation_files": [],
+            "result_files": [
+                {
+                    "object": "file",
+                    "id": "file-o8idvfGwg1VMS3ph30oc96Y3",
+                    "purpose": "fine-tune-results",
+                    "filename": "compiled_results.csv",
+                    "bytes": 17208,
+                    "created_at": 1684190129,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "created_at": 1684186540,
+            "updated_at": 1684190130,
+            "status": "succeeded",
+            "fine_tuned_model": "curie:ft-personal-2023-05-15-22-35-28"
+        },
+        {
+            "object": "fine-tune",
+            "id": "ft-yXVKqrYfAQY6ckK2z8w69awv",
+            "hyperparams": {
+                "n_epochs": 4,
+                "batch_size": 1,
+                "prompt_loss_weight": 0.01,
+                "learning_rate_multiplier": 0.1
+            },
+            "organization_id": "org-bYCY6SRU0TjFN5GBGPo6sKXi",
+            "model": "curie",
+            "training_files": [
+                {
+                    "object": "file",
+                    "id": "file-DILkImh8E8Gl3PEGY1kD95BA",
+                    "purpose": "fine-tune",
+                    "filename": "FineTuningSample1.jsonl",
+                    "bytes": 9099,
+                    "created_at": 1684148376,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "validation_files": [],
+            "result_files": [
+                {
+                    "object": "file",
+                    "id": "file-0CyfUp4cLPIhNfH9dv1j4JtG",
+                    "purpose": "fine-tune-results",
+                    "filename": "compiled_results.csv",
+                    "bytes": 17145,
+                    "created_at": 1684191174,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "created_at": 1684186735,
+            "updated_at": 1684191175,
+            "status": "succeeded",
+            "fine_tuned_model": "curie:ft-personal-2023-05-15-22-52-53"
+        },
+        {
+            "object": "fine-tune",
+            "id": "ft-APj3KgkNKa8vjrt67WyFf1oU",
+            "hyperparams": {
+                "n_epochs": 4,
+                "batch_size": 1,
+                "prompt_loss_weight": 0.01,
+                "learning_rate_multiplier": 0.1
+            },
+            "organization_id": "org-bYCY6SRU0TjFN5GBGPo6sKXi",
+            "model": "curie",
+            "training_files": [
+                {
+                    "object": "file",
+                    "id": "file-rr52uDaNMcspoOZ4bAu3wbOS",
+                    "purpose": "fine-tune",
+                    "filename": "FineTuningSample1.jsonl",
+                    "bytes": 9099,
+                    "created_at": 1684187069,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "validation_files": [],
+            "result_files": [
+                {
+                    "object": "file",
+                    "id": "file-wLlZV8ebowFsXumRBkQ9LCQE",
+                    "purpose": "fine-tune-results",
+                    "filename": "compiled_results.csv",
+                    "bytes": 17141,
+                    "created_at": 1684192045,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "created_at": 1684187099,
+            "updated_at": 1684192045,
+            "status": "succeeded",
+            "fine_tuned_model": "curie:ft-personal-2023-05-15-23-07-24"
+        },
+        {
+            "object": "fine-tune",
+            "id": "ft-xDVtdMOJIqMBhMLo6SJrTbey",
+            "hyperparams": {
+                "n_epochs": 4,
+                "batch_size": 1,
+                "prompt_loss_weight": 0.01,
+                "learning_rate_multiplier": 0.1
+            },
+            "organization_id": "org-bYCY6SRU0TjFN5GBGPo6sKXi",
+            "model": "curie",
+            "training_files": [
+                {
+                    "object": "file",
+                    "id": "file-rr52uDaNMcspoOZ4bAu3wbOS",
+                    "purpose": "fine-tune",
+                    "filename": "FineTuningSample1.jsonl",
+                    "bytes": 9099,
+                    "created_at": 1684187069,
+                    "status": "processed",
+                    "status_details": null
+                }
+            ],
+            "validation_files": [],
+            "result_files": [],
+            "created_at": 1684249161,
+            "updated_at": 1684252245,
+            "status": "pending",
+            "fine_tuned_model": null
+        }
+    ]
+}

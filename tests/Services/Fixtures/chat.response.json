@@ -1,0 +1,21 @@
+{
+    "id": "chatcmpl-7EOIzdopVfT69wDwPdiNQti6LJ8Ea",
+    "object": "chat.completion",
+    "created": 1683664377,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+        "prompt_tokens": 21,
+        "completion_tokens": 192,
+        "total_tokens": 213
+    },
+    "choices": [
+        {
+            "message": {
+                "role": "assistant",
+                "content": "Bien s\u00fbr. Le PHP est un langage de programmation pour le d\u00e9veloppement web. Ce langage permet de cr\u00e9er des pages web dynamiques et interactives. Il est souvent utilis\u00e9 en combinaison avec une base de donn\u00e9es pour stocker et r\u00e9cup\u00e9rer des informations.\n\nVoici quelques bases du PHP :\n\n1. Les variables : pour stocker des donn\u00e9es\n\n2. Les fonctions : pour ex\u00e9cuter des t\u00e2ches sp\u00e9cifiques\n\n3. Les boucles : pour r\u00e9p\u00e9ter une t\u00e2che plusieurs fois\n\n4. Les conditions : pour ex\u00e9cuter une t\u00e2che en fonction d'une condition\n\n5. Les tableaux : pour stocker plusieurs donn\u00e9es dans une seule variable\n\nIl y a beaucoup \u00e0 apprendre sur le PHP, mais cela peut \u00eatre un outil tr\u00e8s utile pour le d\u00e9veloppement web. Si vous avez des questions sp\u00e9cifiques, n'h\u00e9sitez pas \u00e0 me demander."
+            },
+            "finish_reason": "stop",
+            "index": 0
+        }
+    ]
+}

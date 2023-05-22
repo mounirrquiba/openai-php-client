@@ -1,0 +1,43 @@
+{
+    "name": "mounirrquiba/openai",
+    "description": "OpenAI API Client is a component-oriented, extensible client library for the OpenAI API. It's designed to be faster and more memory efficient than traditional PHP libraries.",
+    "keywords": ["php", "ai", "openai", "sdk", "codex", "GPT-3", "GPT-4", "DALL-E", "api", "client", "natural", "language", "processing"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mounir R'Quiba",
+            "email": "mounir.rquiba@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MounirRquiba\\OpenAi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.16"
+    },
+    "scripts": {
+        "test:unit": "vendor/bin/phpunit tests/",
+        "test:types": "vendor/bin/phpstan",
+        "test:format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+        "test": [
+            "@test:unit",
+            "@test:types",
+            "@test:format"
+        ]
+    }
+}

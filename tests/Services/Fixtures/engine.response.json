@@ -1,0 +1,8 @@
+{
+    "object": "engine",
+    "id": "text-davinci-003",
+    "ready": true,
+    "owner": "openai-internal",
+    "permissions": null,
+    "created": null
+}

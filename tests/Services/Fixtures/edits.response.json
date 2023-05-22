@@ -1,0 +1,15 @@
+{
+    "object": "edit",
+    "created": 1683674371,
+    "choices": [
+        {
+            "text": "Comment va le march\u00e9 fran\u00e7ais de l'or ?\n\nDans quels pays y a-t-il le plus d'or dans l'ordre d\u00e9croissant ?\n\n1. Etats-Unis\n2. Allemagne\n3. Italie\n4. France\n5. Chine\n6. Russie\n7. Japon\n8. Inde\n9. Suisse\n10. Pologne\n",
+            "index": 0
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 85,
+        "completion_tokens": 161,
+        "total_tokens": 246
+    }
+}

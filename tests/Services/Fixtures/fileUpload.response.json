@@ -1,0 +1,10 @@
+{
+    "object": "file",
+    "id": "file-S3MdWDGdLUADe61uw6iwYzcs",
+    "purpose": "fine-tune",
+    "filename": "FineTuningSample1.jsonl",
+    "bytes": 9099,
+    "created_at": 1684148377,
+    "status": "uploaded",
+    "status_details": null
+}

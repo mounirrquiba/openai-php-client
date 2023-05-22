@@ -1,0 +1,35 @@
+{
+    "object": "list",
+    "data": [
+        {
+            "object": "file",
+            "id": "file-DILkImh8E8Gl3PEGY1kD95BA",
+            "purpose": "fine-tune",
+            "filename": "FineTuningSample1.jsonl",
+            "bytes": 9099,
+            "created_at": 1684148376,
+            "status": "processed",
+            "status_details": null
+        },
+        {
+            "object": "file",
+            "id": "file-DjEv26W691AwaOX4DZukmrwq",
+            "purpose": "fine-tune",
+            "filename": "FineTuningSample1.jsonl",
+            "bytes": 9099,
+            "created_at": 1684148337,
+            "status": "processed",
+            "status_details": null
+        },
+        {
+            "object": "file",
+            "id": "file-S3MdWDGdLUADe61uw6iwYzcs",
+            "purpose": "fine-tune",
+            "filename": "FineTuningSample1.jsonl",
+            "bytes": 9099,
+            "created_at": 1684148377,
+            "status": "processed",
+            "status_details": null
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "object": "fine-tune",
+    "id": "ft-kXSupnLOlDZYomVs6yfhsbgg",
+    "hyperparams": {
+        "n_epochs": 4,
+        "batch_size": 1,
+        "prompt_loss_weight": 0.01,
+        "learning_rate_multiplier": 0.1
+    },
+    "organization_id": "org-bYCY6SRU0TjFN5GBGPo6sKXi",
+    "model": "curie",
+    "training_files": [
+        {
+            "object": "file",
+            "id": "file-DILkImh8E8Gl3PEGY1kD95BA",
+            "purpose": "fine-tune",
+            "filename": "FineTuningSample1.jsonl",
+            "bytes": 9099,
+            "created_at": 1684148376,
+            "status": "processed",
+            "status_details": null
+        }
+    ],
+    "validation_files": [],
+    "result_files": [
+        {
+            "object": "file",
+            "id": "file-v87ClcgYM59sL3E4pBVoBhYv",
+            "purpose": "fine-tune-results",
+            "filename": "compiled_results.csv",
+            "bytes": 17201,
+            "created_at": 1684186835,
+            "status": "processed",
+            "status_details": null
+        }
+    ],
+    "created_at": 1684186400,
+    "updated_at": 1684186836,
+    "status": "succeeded",
+    "fine_tuned_model": "curie:ft-personal-2023-05-15-21-40-34",
+    "events": [
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Created fine-tune: ft-kXSupnLOlDZYomVs6yfhsbgg",
+            "created_at": 1684186400
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Fine-tune costs $0.02",
+            "created_at": 1684186488
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Fine-tune enqueued. Queue number: 0",
+            "created_at": 1684186488
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Fine-tune started",
+            "created_at": 1684186682
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Completed epoch 1\/4",
+            "created_at": 1684186759
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Completed epoch 2\/4",
+            "created_at": 1684186777
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Completed epoch 3\/4",
+            "created_at": 1684186795
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Completed epoch 4\/4",
+            "created_at": 1684186812
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Uploaded model: curie:ft-personal-2023-05-15-21-40-34",
+            "created_at": 1684186835
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Uploaded result file: file-v87ClcgYM59sL3E4pBVoBhYv",
+            "created_at": 1684186836
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Fine-tune succeeded",
+            "created_at": 1684186836
+        }
+    ]
+}

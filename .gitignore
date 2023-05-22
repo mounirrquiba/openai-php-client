@@ -1,0 +1,14 @@
+/.env
+/.env.local
+/.env.local.php
+/.env.*.local
+/var/
+/vendor/
+/assets/
+/scripts/
+/index.php
+/phpunit.xml
+.phpunit.result.cache
+.DS_Store
+.php-cs-fixer.cache
+.composer.lock

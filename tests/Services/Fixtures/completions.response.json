@@ -1,0 +1,19 @@
+{
+    "id": "cmpl-7EPcDBJ1x3hLv5s1FVHnPyHbZQenQ",
+    "object": "text_completion",
+    "created": 1683669413,
+    "model": "text-davinci-003",
+    "choices": [
+        {
+            "text": "\n|-----|------|-------|\n| Neoskizzles | Purple | Candy-like  |  \nLoheckles     | Grayish Blue    | Tart, Lemon-like  |\nPounits      ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 2049,
+        "total_tokens": 2206
+    }
+}

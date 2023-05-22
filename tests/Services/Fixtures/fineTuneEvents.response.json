@@ -1,0 +1,71 @@
+{
+    "object": "list",
+    "data": [
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Created fine-tune: ft-kXSupnLOlDZYomVs6yfhsbgg",
+            "created_at": 1684186400
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Fine-tune costs $0.02",
+            "created_at": 1684186488
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Fine-tune enqueued. Queue number: 0",
+            "created_at": 1684186488
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Fine-tune started",
+            "created_at": 1684186682
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Completed epoch 1\/4",
+            "created_at": 1684186759
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Completed epoch 2\/4",
+            "created_at": 1684186777
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Completed epoch 3\/4",
+            "created_at": 1684186795
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Completed epoch 4\/4",
+            "created_at": 1684186812
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Uploaded model: curie:ft-personal-2023-05-15-21-40-34",
+            "created_at": 1684186835
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Uploaded result file: file-v87ClcgYM59sL3E4pBVoBhYv",
+            "created_at": 1684186836
+        },
+        {
+            "object": "fine-tune-event",
+            "level": "info",
+            "message": "Fine-tune succeeded",
+            "created_at": 1684186836
+        }
+    ]
+}

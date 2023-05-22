@@ -1823,6 +1823,18 @@ List of exceptions:
 
 [Back to top](#installation)
 
+## Tests
+```shell
+git clone git@github.com:mounirrquiba/openai-php-client.git
+
+cd ./openai-php-client
+
+composer install
+
+composer composer run-script test
+```
+
+[Back to top](#installation)
 
 ## License
 The MIT License (MIT)

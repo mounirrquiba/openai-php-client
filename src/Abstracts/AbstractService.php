@@ -108,7 +108,7 @@ abstract class AbstractService
 
         if (null === $instance) {
             $apiKey = getenv('OPENAI_API_KEY');
-            $organizationKey = getenv('OPENAI_ORGANIZATIONI_KEY');
+            $organizationKey = getenv('OPENAI_ORGANIZATION_KEY');
 
             if ($apiKey) {
                 $this->openIa = OpenAi::init($apiKey, $organizationKey ? $organizationKey : null);

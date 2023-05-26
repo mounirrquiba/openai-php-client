@@ -26,7 +26,7 @@ final class OpenAi implements OpenAiInterface
     private $openaiApiKey;
 
     /**
-     * @var string
+     * @var ?string
      */
     private $openaiOrganization;
 
@@ -58,7 +58,7 @@ final class OpenAi implements OpenAiInterface
         return $this->openaiApiKey;
     }
 
-    public function getOrganizationKey(): string
+    public function getOrganizationKey(): ?string
     {
         return $this->openaiOrganization;
     }
@@ -77,7 +77,9 @@ final class OpenAi implements OpenAiInterface
      */
     public static function getBaseUri(): ?string
     {
-        if (null !== self::$instance && null !== self::$instance->getCustomBaseUri()) {
+        self::checkInstance();
+
+        if (null !== self::$instance->getCustomBaseUri()) {
             return self::$instance->customBaseUri;
         }
 
@@ -93,16 +95,16 @@ final class OpenAi implements OpenAiInterface
      */
     public function getCustomBaseUri(): ?string
     {
-        if (null !== self::$instance) {
-            return self::$instance->customBaseUri;
-        }
+        self::checkInstance();
 
-        return null;
+        return self::$instance->customBaseUri;
     }
 
     public function setBaseUri(?string $customBaseUri): self
     {
-        if (null !== $customBaseUri && null !== self::$instance) {
+        self::checkInstance();
+
+        if (null !== $customBaseUri) {
             self::$instance->customBaseUri = $customBaseUri;
         }
 
@@ -111,9 +113,9 @@ final class OpenAi implements OpenAiInterface
 
     public static function updateBaseUri(?string $customBaseUri): self
     {
-        if (null !== self::$instance) {
-            self::$instance->customBaseUri = $customBaseUri;
-        }
+        self::checkInstance();
+
+        self::$instance->customBaseUri = $customBaseUri;
 
         return self::$instance;
     }
@@ -125,11 +127,11 @@ final class OpenAi implements OpenAiInterface
      */
     public static function setProxy(mixed $proxy): self
     {
-        if (null !== self::$instance) {
-            self::$instance->getOpenAiRequest()->addHeaders([
-                'proxy' => $proxy,
-            ]);
-        }
+        self::checkInstance();
+
+        self::$instance->getOpenAiRequest()->addHeaders([
+            'proxy' => $proxy,
+        ]);
 
         return self::$instance;
     }
@@ -139,9 +141,9 @@ final class OpenAi implements OpenAiInterface
      */
     public static function removeProxy(): self
     {
-        if (null !== self::$instance) {
-            self::removeHeader('proxy');
-        }
+        self::checkInstance();
+
+        self::removeHeader('proxy');
 
         return self::$instance;
     }
@@ -155,9 +157,9 @@ final class OpenAi implements OpenAiInterface
      */
     public static function addHeaders(?array $headers): self
     {
-        if (null !== self::$instance) {
-            self::$instance->getOpenAiRequest()->addHeaders($headers);
-        }
+        self::checkInstance();
+
+        self::$instance->getOpenAiRequest()->addHeaders($headers);
 
         return self::$instance;
     }
@@ -171,9 +173,9 @@ final class OpenAi implements OpenAiInterface
      */
     public static function removeHeader(string $header): self
     {
-        if (null !== self::$instance) {
-            self::$instance->getOpenAiRequest()->removeHeader($header);
-        }
+        self::checkInstance();
+
+        self::$instance->getOpenAiRequest()->removeHeader($header);
 
         return self::$instance;
     }
@@ -185,11 +187,9 @@ final class OpenAi implements OpenAiInterface
      */
     public static function getHeaders(): array
     {
-        if (null !== self::$instance) {
-            return self::$instance->getOpenAiRequest()->getHeaders();
-        }
+        self::checkInstance();
 
-        return [];
+        return self::$instance->getOpenAiRequest()->getHeaders();
     }
 
     /**
@@ -228,6 +228,22 @@ final class OpenAi implements OpenAiInterface
         $this->openapiRequest = OpenAiRequest::getInstance($this);
 
         return $this;
+    }
+
+    public static function checkInstance(): void
+    {
+        $instance = OpenAi::getInstance();
+
+        if (null === $instance) {
+            $apiKey = getenv('OPENAI_API_KEY');
+            $organizationKey = getenv('OPENAI_ORGANIZATIONI_KEY');
+
+            if ($apiKey) {
+                OpenAi::init($apiKey, $organizationKey ? $organizationKey : null);
+            } else {
+                throw new \Exception('OPENAI_API_KEY key not set into your env');
+            }
+        }
     }
 
     /**
